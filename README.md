@@ -7,7 +7,7 @@ Final Year Project — BS Computer Science, University of Engineering and Techno
 ## Demo
 
 **App Walkthrough**
-[Demo Video of my App(https://drive.google.com/file/d/1DTl5q_eEFjLGF6Zsx6lr7QyfzgWAVJpq/view?usp=drive_link)
+[Demo Video of my App](https://drive.google.com/file/d/1DTl5q_eEFjLGF6Zsx6lr7QyfzgWAVJpq/view?usp=drive_link)
 
 **Project Overview**
 [Explained Video About what VDerm-X is!](https://drive.google.com/file/d/1bEyTY4kg_2acfPMkxCkPAHvwx43nscvF/view?usp=drive_link)
