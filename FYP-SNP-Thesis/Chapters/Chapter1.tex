@@ -1,0 +1,192 @@
+% Chapter 1
+
+\chapter{Introduction} % Write in your chapter title
+\label{Chapter1}
+\lhead{Chapter 1. \emph{Introduction}} % Write in your chapter title to set the page header
+Nursing is one of the largest sectors in the healthcare ecosystem. The nurses are overworked because they are understaffed and overburdened. An increased number of patients burden the nurses who experience burnout. This directly affects patient care and nurses’ behavior towards them. This significantly reduces healthcare efficiency and compromises patient safety. The nursing care workflow needs to be automated to assist nurses, so that they may perform better. To address this problem, this project aims to assist the nursing workflow by developing an Electronic Nursing Record (ENR). The scope of the project includes detecting the activities of elderly patients using the IoT of IP cameras, forecasting activities, and extracting information from vital sign monitors. The system leverages integration with the existing infrastructure to provide a cost-effective and practical solution. It incorporates cameras to monitor patients 24/7. The system provides a comprehensive dashboard that tracks and classifies a collection of patient vitals and daily activities with real-time analytics in the form of infographics. The system uses multiple cameras to translate visual input into accurate situational assessments and rapid responses to assist nurses. Automation allows nurses to carry out their tasks promptly and helps doctors make informed decisions about the patient. Timely diagnosis and medical intervention can help reduce mortality rates. The system provides new opportunities for economic growth, as the prototype can be extended to a full-fledged product. The project aims to address Pakistan’s sustainable development goals to provide better healthcare facilities. This technology can later be shifted from hospitals to providing nursing at old age homes for the elderly and at daycare centers for babies. The solution can also be integrated with IoT wearables to provide nursing care at home.
+\section{Background}
+According to the World Health Organization (WHO), nursing is the largest healthcare sector accounting for nearly 50\% of the global health workforce \cite{bib1}. It is a crucial part of healthcare, as evident from the numbers and the fact that nurses provide primary care to a patient, irrespective of the patient setting. Nurses are the first points of contact with patients. They provide not only medical support but also emotional support in times of distress. At the current status quo, nurses are understaffed and overworked. Especially in times of epidemic or in the most recent example of the COVID-19 pandemic, nurses had to be on the front line to provide primary care irrespective of the fact that it was dangerous to be in proximity to a patient. \\\ Nurses grapple with an overwhelming workload, as they navigate through a large number of patients simultaneously, causing burnouts \cite{burnout}. They have to work long hours \cite{stress} and pull multiple shifts to cater to the patient's pressing need for constant care and attention. According to a study \cite{bib2}, nurses in Canada experienced post-traumatic stress disorders and had higher burnout and psychological distress even two years after the SARS outbreak in 2003. Although this outbreak was smaller than the COVID-19 pandemic in 2020, it had major adverse effects even after it was mediated. A study conducted amidst COVID-19 \cite{bib3} showed that nurses experienced some form of anxiety, depression, and fear. In addition to the severity of the illness that the nurses had to cater to, the workload increased because of the need to provide humanistic care in the absence of family. Increased workload is positively associated with emotional exhaustion in nurses, which is a major factor in burnout \cite{emotional}.\\\ In one study \cite{compassion}, nurses reported that they experienced burnout due to emotional exhaustion and depersonalization. This can affect nurses' ability to perform physically and mentally, negatively affecting nurse-patient relationships. Consequently, nurses can experience increased burnout and act in a manner that lacks compassion because of emotional detachment. The potential for burnout endangers patients and colleagues due to higher rates of absenteeism and medical errors. The problem of nurse workload and burnout is incorrectly regarded as an individual or an isolated issue when, in fact, it is an insurmountable global challenge. The study \cite{JUN2021103933} concluded that when nurses experienced higher levels of burnout, they were more likely to make mistakes in terms of patient safety and quality of care in their units independent of their demographic characteristics or working conditions. This shows that nurses are understaffed and the only way to cater to the rising needs of patient care besides training more nurses is to provide some form of automation for nurses to reduce their workload.\\\
+Medical and technological advancements have led to an aging population. According to the World Health Organization (WHO), the world’s population of people aged ≥ 60 years will double to 2.1 billion by 2050 \cite{population}. 
+Pakistan alone has approximately 9.7 million people aged 65 or above \cite{OldAgePop}. Elderly individuals and patients with chronic illnesses require constant care and monitoring. Therefore, it is not feasible to assign nurses to each patient. It is also difficult to assign a single nurse as a 24/7 monitor for multiple patients. When a single nurse is assigned to multiple patients at a time, they must perform multiple and varying duties for each patient. Pakistan’s nurse-to-people ratio is 1.5:1000, which is less than the minimum ratio of 2.5:1000 recommended by the World Health Organization (WHO) \cite{nursing}. In 2020, Pakistan's nurse-to-patient ratio was 1:40, which is less than the 3:10 recommended by the Pakistan Nursing Council \cite{NurseToPatient}. Any negligence in nursing care can lead to irreversible harm.
+
+Needless to say, the problem of nurse burnout has been recognized before, and there have been some attempts to automate nursing in one form or the other. Researchers have employed different traditional and latest techniques to assist nurses in their care workflows. Recently, the use of artificial intelligence has become dominant in any system or product being developed, as it has the potential to revolutionize the healthcare industry. AI is readily used in healthcare to expedite genome sequencing and drug development. Machine learning techniques are used to interpret complex data for patient assessment and disease risk assessment. AI algorithms are used to analyze medical images, correlate symptoms and biomarkers, and characterize illnesses.\\
+With the recent increase in computational speed enhancing AI capabilities and LLMs, such as ChatGPT and Gemini, there is a huge potential to automate routine tasks using AI and IoT models. AI algorithms can be used to provide effective real-time clinical decision support and to automate and assist the nursing care workflow.  Currently, studies have compared automation in a single nursing care niche. Such as a comparison of remote patient monitoring systems \cite{rpm} and different techniques that are employed in it but to the best of our knowledge, there doesn't exist a dedicated system that automates the nursing care workflow. While there have been some efforts to improve the nursing sector, none of them automate or directly assist nurses in reducing their burden, nor do they use the state-of-the-art (SOTA) technology that is currently available. The Aga Khan University Hospital (AKUH) in Karachi, Pakistan, uses an Electronic Health Record (EHR) system called "e-Health." The system allows appointment scheduling, online registration, and a clinical information system that captures patient information and clinical notes. The Shaukat Khanum Memorial Cancer Hospital and Research Centre (SKMCH RC) in Lahore, Pakistan, uses an EHR system called "Cerner Millennium." The system was designed to manage clinical documentation, order entry, medication management, and clinical decision support. There is a need for automation and cost-effective solutions for the successful aging of people. There is a technological and market gap as there is no dedicated nursing support system. This calls for an innovative approach to fulfill this need. By leveraging advanced technologies and intelligent monitoring capabilities, this project has the potential to revolutionize the healthcare industry. The project is not a replacement, but a support system for the existing infrastructure in Pakistan and other third-world countries.\\\
+Owing to the unavailability of such a system, the project aims to develop a prototype of a dedicated system that can automate and assist nurses in some of the tasks. This project will help establish a pathway for future modifications and improvements that can be introduced into the system. It can also be improved for the development of a full-fledged product. Furthermore, this project will provide a base for conducting further research and development by providing a structured approach to resolve the problem at hand. 
+
+\section{Motivation}
+Despite all technological advancements, nurses must cover a wide range of activities.  This project aims to assist the nursing care workflow by developing an ENR. It incorporates cameras to monitor patients' activities of daily living. This allows nurses and doctors to make informed decisions and improve the quality of patient care.
+
+\section{Objectives}
+
+\subsection{Research Objectives}
+The research objectives are:
+\begin{itemize}
+    \item Survey existing technologies that automate nursing care workflow.
+    \item Study how the Boundary sensitive network (BSN) operates in a real-time activity recognition pipeline.
+    \item Evaluate the accuracy of BSN for temporal proposal generation.
+    \item Utilize the proposals generated in the Temporal segment network (TSN) for activity recognition.
+    \item Fine-tune TSN and BSN on patient activities of daily living.
+    \item Study how transformers work.
+    \item Train a transformer for representation learning.
+    \item Use the transformer for downstream tasks to forecast patient activities.
+    \item Train a computer vision (CV) model to log patient vitals from the patient monitor.
+\end{itemize}
+\subsection{Industrial Objectives}
+The industrial objectives of the project are:
+\begin{itemize}
+    \item Use an IoT of IP cameras to log ADLs.
+    \item Synchronize multiple cameras.
+    \item Develop the first-of-its-kind software suite dedicated to assisting nurses.
+    \item Provide an ENR to assist the nursing sector.
+    \item Reduce nurse burnout with rapid situational assessment and response.
+    \item Develop a foundation for a product.
+    \item Lay the groundwork for future development by integrating cutting-edge technology into healthcare systems.
+\end{itemize}
+\subsection{Academic Objectives}
+The academic goals of the project are to:
+\begin{itemize}
+    \item Apply acquired knowledge to develop a practical software application.
+    \item Use theoretical concepts to address real-world challenges.
+    \item Develop proficiency in utilizing a technology stack for software engineering.
+    \item Explore the applications of deep learning in computer vision and natural language processing domains.
+    \item Engineer cross-platform applications to understand industry-standard practices.
+    \item Gain comprehension of the development process for complex software systems.
+    \item Acquire experience in project management for long-term software projects.
+    \item Enhance collaborative skills through teamwork with project members.
+    \item Successfully deliver a complete software solution from initial development to the deployment stage.
+\end{itemize}
+ 
+\section{Domain Knowledge}
+Asmirajanti et al. 2019 \cite{nurse-performance} conducted a study in an Indonesian hospital to assess the efficiency of nursing tasks. The results showed that nurses' performance in some nursing activities was below the standard (80\%). Some nursing activities that needed to be optimized included the assessment of functional status, risk of pressure ulcer (20.8\%), assessment of biological aspects (0.4\%), formulation of a nursing diagnosis (20.8\%), collaboration in drug administration (60.8\%), monitoring of vital signs (23.3\%), monitoring of activities of daily living (ADL) (37.5\%), mobilization/rehabilitation (37.5\%), nursing outcomes (46.7\%), identification of patients’ homes (41.3\%), and quality of life (66.3\%). It also showed that nurses were not documenting everything, which is why there was a major performance drop. According to the nursing standards of nursing as published by the American Nurse Association (ANA) \cite{ANA}, "The registered nurse collects pertinent data and information relative to the 
+healthcare consumer’s health or the situation." This highlights the importance of recording the patient's activities. In another publication that conforms to ANA's standards by Open \cite{OPEN-RN}, "Functional health assessment collects data related to the patient’s functioning and their physical and mental capacity to participate in Activities of Daily Living (ADLs)". Information obtained when assessing functional health provides nurses with a holistic view of a patient's response to illness and life conditions.
+Ouden et al. \cite{role-of-nursing} conducted a study in a nursing home to understand the role of nurses in activities of daily living. They found that nursing staff provided verbal or physical support in about half of the observed instances, while they completely took over activities in 45\% of cases. Supervision was rare (4\%) where staff observed residents and intervened when needed. Their results emphasized the importance of nursing staff in increasing residents' activity levels but noted challenges due to limited staff availability. In response to the high workload, the nursing staff would prioritize task completion over residents' individual needs and preferences, leading to increased dependency.
+Owing to the limited staff and lack of automation, the nurses are unable to provide personalized care to each patient consequently adversely affecting the patient outcomes.  
+
+\section{Impact of ADLs on nursing protocol}
+Edemekong et al. 2023 \cite{ADLs-importance} concluded that measurement of an individual's ADL is important, as these are predictors of admission to nursing homes, need for alternative living arrangements, hospitalization, and use of paid home care. The ADLs of a patient allow diagnosis of early onset of diseases and personalized care plans. The outcome of a treatment program can also be assessed by reviewing the patient's ADLs. In 2011, the United States National Health Interview Survey determined that 20.7\% of adults aged 85 years or older, 7\% of those aged 75-84 years, and 3.4\% of those aged 65-74 needed help with ADLs. The number of patients needing continuous monitoring is increasing. A single nurse cannot be assigned to multiple patients as it may lead to medical errors. Assigning a single nurse to each patient requires a large nurse workforce to meet the increasing number of patients, which is also not possible. For these reasons, nurses need automation that can assist in logging patient activities so that they may focus on assisting the elderly in their activities.  Herdman et al. 2009 \cite{Herdman2009ImpactOC} found that continuous vigilance monitoring enhanced patient-centric care with increases in direct and indirect nursing care and documentation of those activities.
+\section{Problem Statement}
+The project aims to reduce nurse burnout and provide assistance to nurses by developing an ENR prototype that utilizes cutting-edge technology.
+\section{Project Scope}
+The scope of the project is defined as follows:
+\begin{itemize}
+    \item Develop a prototype.
+    \item Assist primary care nurses in activity logging.
+    \item Recognize normal activities of daily living.
+    \item Real-time monitoring of the elderly and patients with chronic illnesses with one camera per person.
+    \item Object tagging and tracking instead of face recognition.
+    \item Assist nurses with documentation, task management, communication, and emergency alerts.
+    \item Provide manual and automatic vital monitoring.
+    \item Forecast activities based on the previous activities.
+\end{itemize}
+Following are the list of activities that the project aims to recognize: \\
+\begin{itemize}
+    \item \textbf{Sleep} : Keeping track of sleep duration is essential for healthcare workers to understand the general health and recovery of a patient. Changes in sleeping schedules may indicate some kind medical issue.
+    \item \textbf{Drink}: Monitoring fluid intake to ensure that the patients remain hydrated, recover well, and maintain bodily functions is important.
+    \item \textbf{Eat}: Monitoring eating habits help in calculating the nutritional contents of the patient. This ensures that they receive sufficient nutrients for their overall health and recovery process.
+    \item \textbf{Sit}: Tracking a patient’s sitting time can help healthcare workers understand the mobility and physical activity status of the patient, which are important for preventing issues like muscle atrophy and soreness.
+    \item \textbf{Take/Receive Medicine}: Documenting medication intake is crucial for ensuring adherence to the treatment plan, avoiding missed doses and potential drug interactions.
+    \item \textbf{Toilet in, Toilet out}: Monitoring toilet in and out activities can indicate patient's digestive health. Moreover, longer duration spent in a toilet can indicate an emergency where timely assistance is required.  
+    \item \textbf{Use Book/Mobile}: Monitoring the use of books and mobile can help in understanding the patient's emotional well being and their interest in daily activities.
+    \item \textbf{Watch TV}: Tracking TV watching activities can help in understanding patient's mental state, relaxation levels, and overall engagement in recreational activities.
+    \item \textbf{Talk}: Tracking patient's conversation lengths helps in understanding their social interactions, communication skills, and emotional health, all of which are crucial for their mental well-being.
+    \item \textbf{Walk}: Recording walking activities are useful in assessing a patient's mobility, degree of physical activity, and rehabilitation progress, all of which are crucial parameters of recovery and independence.\\
+\end{itemize}    
+When different multiple movements of the human body combine, they form an action. Multiple actions are combined to form an activity. When an activity is carried out over a prolonged period, it becomes a behavior that in turn inhibits patterns. Using the above-mentioned activities, the system recognizes the following behavioral patterns:
+\begin{itemize}
+    \item \textbf{Sleeping patterns}: Sleep duration is logged to alert the nurse in case the patient needs to turn around during sleep or the patient needs attention. 
+    \item \textbf{Consumption patterns}: The system detects whether an item is being consumed. The consumption routine is logged to detect overeating, or excessive fluid consumption to mark an abnormality. The Nurse is prompted to enter the consumed item and quantity.
+    \item \textbf{Walking patterns}: Duration of walk.
+    \item \textbf{Toilet usage patterns}: Abnormal time spent in the toilet using time in and out logs.
+    \item \textbf{Activity immersion patterns}: Patterns of reading newspapers and books, watching TV, using mobile phones, and talking to people on the phone or in person. These patterns help to understand the social outlook of patients and their mood changes.
+\end{itemize}
+\section{Contributions}
+Considering the hybrid nature of our project, our contributions are hybrid as well. This project establishes strong foundations for future work to research and develop. Our step towards integrating cutting-edge technology with the existing industrial gap helps align the future products to be developed around assisting nurses as well as researching other areas in nursing that can be automated. Most importantly our project highlights how important it is to automate the nursing sector and the challenges that exist in using vision techniques for real-time support. The prototype proposed in this project can be extended to become a complete product for the end-user. The prototype offers the following to the end-user:
+\begin{enumerate}
+    \item Intelligent reporting and alarm system 
+    \item Real-time automated patient monitoring
+    \item Patient activity and vitals forecasting
+    \item AI-assisted insights on patient logs
+\end{enumerate}
+
+\section{Challenges \& Limitations}
+
+\subsection{Desktop App}
+Owing to the large support available for Python, the desktop application was developed using Python's PyQT framework. PyQt is a relatively underdeveloped framework, the UI design of the desktop application resembles legacy applications and is not what is normally seen in modern flat UI desktop designs. For a prototype, such a UI is sufficient.
+
+\subsection{Third-Party Web Socket}
+When a web app is deployed, it does not allow the use of web socket communication owing to security concerns. Communication needs to be performed using third-party WebSockets.
+
+\subsection{Pre-existing Infrastructure}
+As seen in Pakistan and other third-world countries, the pre-existing infrastructure in the majority of hospitals is not up-to-date with modern smart devices that have a network connection. For cutting-edge technology to coexist with outdated infrastructure, only IP cameras can be used to detect and extract vital information about a patient instead of medical device integration. This constraint results in limitations to the technology that can be leveraged.
+
+\subsection{Computer vision challenges}
+Using cameras, there is an issue of viewpoint variation where if a person is seen from different angles, they might look different in size or shape. The algorithms we use must be able to identify that all the different perspectives captured by cameras belong to the same person. Moreover, the problem of occlusion in a frame makes it difficult to recognize and track objects. In hospitals, wards have curtains around each bed, that prevent the cameras from detecting any activity. Changes in illumination are also challenging because they alter the intensity of the images. It also alters the perception of an image under different lighting conditions. This has been an issue when processing the same object in the daylight versus night light. At times, there are missing values for unrecognized behaviors and activities that require manual input from the nurse.
+
+\subsection{Real-time Surveillance and Monitoring}
+It cannot be said that current AI models can detect activity in real-time with accuracy comparable to the SOTA  in trimmed video clips and images. The MMAction2 framework has achieved SOTA activity detection and recognition on trimmed data; however, for real-time detection, there is a need to research other methods. Hence, the problem of activity recognition in real-time environments remains unresolved.
+
+\subsection{Attitude towards AI}
+There is a general cynical and stereotypical attitude towards technology, specifically towards AI technology. This attitude delays the overall adoption and growth of technology. As seen in past research and attempts to automate nursing, doctors, and nurses find such systems as a nuisance to their workflow; thus, when the product is being developed, it needs to be designed keeping in mind their mental models. Moreover, there are data protection and privacy reservations of patients with AI technology, which leads to distrust and rejection of technology adoption.
+
+\subsection{Data}
+The development of an AI model requires a large number of untrimmed videos of a hospital location to develop a general model for the patients to detect activities. Deep learning algorithms require an extremely large amount of data, and considering that the data is in video form, a multi-GPU setup is required to train and test the AI model. There is a prevalent data privacy concern and as stated before a cynical attitude, obtaining such a huge amount of data is a difficult task. 
+
+\section{Application Areas}
+
+Elderly patients require assistance with their ADLs and must be monitored around the clock. Besides the elderly, patients who require constant care and assistance with their ADLs typically fall into the following categories:
+
+\textbf{1. Neuromuscular disorders:}
+
+\begin{itemize}
+    \item \textbf{Diseases:} Amyotrophic lateral sclerosis (ALS), multiple sclerosis (MS), myasthenia gravis, and spinal muscular atrophy (SMA)
+    \item \textbf{Setting:} These patients can be found in various settings, depending on the severity of their condition and their individual needs. 
+
+\begin{itemize}
+        \item \textbf{Home:} With extensive home care support and adaptations, some patients with mild neuromuscular disorders can be managed at home.
+        \item \textbf{Nursing home:} This is a common setting for patients who require assistance with most ADLs but do not necessarily require intensive medical care provided in a hospital.
+        \item \textbf{Hospital:} Patients experiencing acute exacerbations of their condition or requiring specialized interventions such as ventilator support might be admitted to hospitals, often in specialized units such as: 
+
+    \begin{itemize}
+            \item \textbf{Neuromuscular intensive care unit (NMICU):} For critically ill patients with neuromuscular disorders.
+            \item \textbf{Neurology ward:} For patients with neurological conditions, including some with neuromuscular involvement. 
+    \end{itemize}
+
+\end{itemize}
+
+\end{itemize}
+\textbf{2. Dementia:}
+
+\begin{itemize}
+    \item \textbf{Diseases:} Alzheimer's disease, Frontotemporal dementia, Lewy body dementia, Vascular dementia
+    \item \textbf{Setting:} 
+
+\begin{itemize}
+        \item \textbf{Home:} In the early stages, some patients with dementia can be cared for at home with support from family members or caregivers.
+        \item \textbf{Nursing home:} This is a common setting for patients in later stages of dementia who require extensive assistance and specialized care.
+        \item \textbf{Hospital:} Patients with acute medical issues or behavioral disturbances may be admitted to a hospital, typically a general medicine ward or dedicated geriatric ward. 
+\end{itemize}
+
+\end{itemize}
+\textbf{3. Severe burns:}
+
+\textbf{Setting:} Burn patients requiring constant care are primarily treated in specialized burn units within hospitals. These units are equipped with advanced technology and specially trained staff to manage complex burn injuries.
+
+\textbf{4. Complex wounds:}
+
+\begin{itemize}
+    \item \textbf{Examples:} Diabetic foot ulcers, pressure injuries, surgical wounds requiring specific monitoring and dressing changes
+    \item \textbf{Setting:} Depending on the complexity and severity of the wound, patients may be treated in: 
+
+\begin{itemize}
+        \item \textbf{Hospital:} For complex wounds requiring specialized care and close monitoring.
+        \item \textbf{Wound care clinic:} For ongoing wound management and dressing changes.
+        \item \textbf{Home care:} With proper training and support, some patients can manage their wounds at home under the supervision of healthcare professionals.
+\end{itemize}
+
+\end{itemize}
+
+The target audience is the elderly population and other patients who require constant care as stated above. Usually, patients do not stay at the hospital for a longer period for various reasons, which is why the solution is offered for homes and nursing homes as well. Hospitals that collaborate with this project will have their wards automated for clinical trials free of cost. Once the project matures from a prototype into a product, it can be offered for public use to other hospitals and individuals at a prescribed cost. The project has the potential to assist families who have elderly individuals in their homes to have peace of mind when leaving them alone. People in nursing homes will also be able to utilize technology aiding in the successful aging of the elderly.
+
+\section{Thesis Structure}
+This thesis begins with an Introduction, providing background context, motivation, objectives, domain knowledge, and the impact of ADLs on the nursing protocol. The Literature Review section follows, discussing relevant research, related work, and current state-of-the-art solutions. Next, the Datasets section introduces the datasets used in the study and other candidate datasets. Then the Methodology section details the research approach. Implementation \& Results present the system requirements, implementation details, and analysis of results. The Portal section elaborates on the developed system, including its perspective, modules, and use cases. Finally, the Conclusion summarizes key findings and provides recommendations for future research.
+% ---------------------------------------------------------------

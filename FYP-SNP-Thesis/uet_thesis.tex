@@ -1,0 +1,269 @@
+%% ----------------------------------------------------------------
+%% Thesis.tex -- MAIN FILE (the one that you compile with LaTeX)
+%% ---------------------------------------------------------------- 
+
+% Set up the document
+\documentclass[a4paper, 11pt, oneside]{uet_thesis}  % Use the "Thesis" style, based on the ECS Thesis style by Steve Gunn
+\graphicspath{{Figures/}}  % Location of the graphics files (set up for graphics to be in PDF format)
+
+% Include any extra LaTeX packages required
+% \usepackage[square, numbers, comma, sort&compress]{natbib}  % Use the "Natbib" style for the references in the Bibliography
+
+\usepackage{verbatim}  % Needed for the "comment" environment to make LaTeX comments
+\usepackage{apacite}
+% \usepackage{vector}  % Allows "\bvec{}" and "\buvec{}" for "blackboard" style bold vectors in maths
+
+\usepackage{url}
+\usepackage{float}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[style=apa, backend=biber]{biblatex}
+\hypersetup{colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=blue}  % Colours hyperlinks in blue, but this can be distracting if there are many links.
+% Add the bibliography file
+\addbibresource{references.bib}
+
+
+% remove the unnecessary spacing before and after the headings/subheadings
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{*0}{*0}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+
+\setlength{\parskip}{6pt}
+%\setlength{\parsep}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\topskip}{0pt}
+
+%% ----------------------------------------------------------------
+\begin{document}
+\frontmatter	  % Begin Roman style (i, ii, iii, iv...) page numbering
+
+% Set up the Title Page
+\title  {IoT Enabled Smart Nursing Portal}
+\session {2020 -- 2024}
+\advisor {Dr. Samyan Qayyum Wahla}
+\authors {
+Muhammad Huzaifa Khan ~~~ 2020-CS-2 \\
+			 Umair Ahmed ~~~ 2020-CS-3 \\
+			 Abdul Ahad ~~~ 2020-CS-5 \\
+              Kashir Saeed ~~~ 2020-CS-27 }
+
+\addresses  {\deptname \\ \univname}  % Do not change this here, instead these must be set in the "Thesis.cls" file, please look through it instead
+\date       {\today}
+\subject    {}
+\keywords   {}
+
+\maketitle
+%% ----------------------------------------------------------------
+
+\setstretch{1.3}  % It is better to have smaller font and larger line spacing than the other way round
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{}  % Clears all page headers and footers
+\rhead{\thepage}  % Sets the right side header to show the page number
+\lhead{}  % Clears the left side page header
+
+\pagestyle{fancy}  % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+
+%% Select only one of the certification pages  
+%\CertificationMSc{}
+\CertificationMSc{}
+\clearpage  % Certification ended, now start a new page
+
+
+%% ----------------------------------------------------------------
+% Declaration Page required for the Thesis, your institution may give you a different text to place here
+\Declaration{
+%\addtocontents{toc}{\vspace{1em}}  % Add a gap in the Contents, for aesthetics
+
+We declare that the work contained in this thesis is our own, except where explicitly stated otherwise. In addition, this work has not been submitted to obtain another degree or professional qualification.
+
+\bigskip
+
+\begin{tabular}{p{0.45\textwidth} p{0.45\textwidth}}
+\textbf{Name:} Muhammad Huzaifa Khan & \textbf{Name:} Umair Ahmed \\ 
+\textbf{Signature:} \rule[0em]{11em}{1.0pt} & \textbf{Signature:} \rule[0em]{11em}{1.0pt} \\ 
+\textbf{Date:} \rule[0em]{11em}{1.0pt} & \textbf{Date:} \rule[0em]{11em}{1.0pt} \\
+\\
+\textbf{Name:} Abdul Ahad & \textbf{Name:} Kashir Saeed \\ 
+\textbf{Signature:} \rule[0em]{11em}{1.0pt} & \textbf{Signature:} \rule[0em]{11em}{1.0pt} \\ 
+\textbf{Date:} \rule[0em]{11em}{1.0pt} & \textbf{Date:} \rule[0em]{11em}{1.0pt} \\
+\end{tabular}
+
+
+}
+
+
+
+
+
+\clearpage     % Declaration ended, now start a new page
+
+%% ----------------------------------------------------------------
+
+\setstretch{1.3}  % Reset the line-spacing to 1.3 for body text (if it has changed)
+
+% The Acknowledgements page, for thanking everyone
+\acknowledgements{
+% \addtocontents{toc}{\vspace{1em}}  % Add a gap in the Contents, for aesthetics
+
+First of all, we owe thanks to Almighty Allah for provisioning
+us with the strength to complete this project. It brings us great pleasure to convey our sincere gratitude and respect to our supervisor, Mr. Samyan Qayyum Wahla, for instilling confidence and excitement and inspiring us in our work through his encouragement and advice. Our warmest gratitude to him for his valuable advice and recommendations. As his pupils, we present this dissertation with great pride and joy. We thank our family for providing the environment and motivation to work on this project. Finally, we would like to express our gratitude to our parents for their unconditional love, devotion, cooperation, and support, without which we would not have been able to complete this project.
+
+Word count: 24,903 words
+
+Keywords: Nursing, Automation, Computer Vision, Camera, Web Portal, Activity Recognition
+
+Conflict of Interest Declaration: The authors declare that they have no affiliations with or involvement in any organization or entity with any financial interest in the subject matter or materials discussed in this manuscript. There is no conflict of interest.
+
+Author Contributions:
+A.A. and M.H.K. contributed to the documentation and critical review process. 
+U.A. and K.S. performed BSN evaluation
+A.A. and M.H.K. trained the TST 
+All authors worked on all ends of development and approved the final manuscript. 
+
+}
+\clearpage  % End of the Acknowledgements
+
+%% ----------------------------------------------------------------
+% End of the pre-able, contents and lists of things
+% Begin the Dedication page
+\setstretch{1.3}  % Return the line spacing back to 1.3
+\pagestyle{empty}  % Page style needs to be empty for this page
+\dedicatory{
+\begin{center}
+{\huge \bf Dedication 
+\par}\end{center}
+Dedicated to Allah, the Almighty in gratitude for His
+favor and kindness. We would like to dedicate this thesis
+and FYP to our loving family and friends
+who have always been there for us.}
+
+
+
+%% ----------------------------------------------------------------
+\pagestyle{fancy}  %The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+%% ----------------------------------------------------------------
+\lhead{\emph{Contents}}  % Set the left side page header to "Contents"
+\tableofcontents  % Write out the Table of Contents
+
+%% ----------------------------------------------------------------
+\lhead{\emph{List of Figures}}  % Set the left side page header to "List if Figures"
+\listoffigures  % Write out the List of Figures
+
+%% ----------------------------------------------------------------
+\lhead{\emph{List of Tables}}  % Set the left side page header to "List of Tables"
+\listoftables  % Write out the List of Tables
+
+%% ----------------------------------------------------------------
+\setstretch{1.5}  % Set the line spacing to 1.5, this makes the following tables easier to read
+\clearpage  % Start a new page
+\lhead{\emph{Abbreviations}}  % Set the left side page header to "Abbreviations"
+\listofsymbols{ll}  % Include a list of Abbreviations (a table of two columns)
+{
+% \textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
+\textbf{ADL} & \textbf{A}citivites of \textbf{D}aily \textbf{L}iving\\ 
+\textbf{ALS} & \textbf{A}myotrophic \textbf{L}ateral \textbf{S}clerosis\\
+\textbf{AMT} & \textbf{A}mazon \textbf{M}echanical \textbf{T}urk \\
+\textbf{BSN} & \textbf{B}oundary \textbf{S}ensitive \textbf{N}etwork \\
+\textbf{BSP} & \textbf{B}oundary \textbf{S}ensitive \textbf{P}roposal \\
+\textbf{CNN} & \textbf{C}onvolutional \textbf{N}eural \textbf{n}etwork \\
+\textbf{CV} & \textbf{C}omputer \textbf{V}ision \\ 
+\textbf{DOS} & \textbf{D}enial \textbf{o}f \textbf{S}ervice\\
+\textbf{ECG} & \textbf{E}lectrocardiogram \\
+\textbf{EHR} & \textbf{E}lectronic \textbf{H}ealth \textbf{R}ecord \\
+\textbf{EMR} & \textbf{E}lectronic \textbf{M}edical \textbf{R}ecord \\
+\textbf{ENR} & \textbf{E}lectronic \textbf{N}ursing \textbf{R}ecord \\
+\textbf{GPU} & \textbf{G}raphical \textbf{P}rocessing \textbf{U}nit\\
+\textbf{HACS} & \textbf{H}uman \textbf{A}ction \textbf{C}lips and \textbf{S}egments \\
+\textbf{HAR} & \textbf{H}uman \textbf{A}ctivity \textbf{R}ecognition \\
+\textbf{HMM} & \textbf{H}idden \textbf{M}arkov \textbf{M}odels \\
+\textbf{HOF} & \textbf{H}istograms of \textbf{O}ptical \textbf{F}low \\
+\textbf{IOU} & \textbf{I}ntersection \textbf{O}ver \textbf{U}nion \\
+\textbf{MAE} & \textbf{M}ean \textbf{A}bsolute \textbf{E}rror \\
+\textbf{MAP} & \textbf{m}ean \textbf{A}verage \textbf{P}recision \\
+\textbf{MBH} & \textbf{M}otion \textbf{B}oundary \textbf{H}istogram \\
+\textbf{MS} & \textbf{m}ultiple \textbf{s}clerosis)\\ 
+\textbf{NCP} & \textbf{N}ursing \textbf{C}are \textbf{P}rocess\\
+\textbf{NMICU} & \textbf{N}euromuscular \textbf{I}ntensive \textbf{C}are \textbf{U}nit \\
+\textbf{ReLU} & \textbf{R}ectified \textbf{L}inear \textbf{U}nit \\
+\textbf{RFID} & \textbf{R}adio \textbf{F}requency \textbf{I}dentification\\
+\textbf{RNN} & \textbf{R}ecurrent \textbf{N}eural \textbf{N}etworks \\
+\textbf{SMA} & \textbf{S}pinal \textbf{M}uscular \textbf{A}trophy \\
+\textbf{SOTA} & \textbf{S}tate \textbf{O}f \textbf{T}he \textbf{A}rt \\
+\textbf{SVDD} & \textbf{S}upport \textbf{V}ector \textbf{D}ata \textbf{D}escription \\
+\textbf{SVM} & \textbf{S}upport \textbf{V}ector \textbf{M}achine \\
+\textbf{TSN} & \textbf{T}emporal \textbf{S}egment \textbf{n}etwork \\
+\textbf{TSU} & \textbf{U}ntrimmed \textbf{T}oyota \textbf{S}marthome \\
+\textbf{VMR} & \textbf{V}alue \textbf{M}odel \textbf{R}ealization \\
+\textbf{YOLO} & \textbf{Y}ou \textbf{O}nly \textbf{L}ook \textbf{O}nce \\
+}
+
+%% ----------------------------------------------------------------
+% The Abstract Page
+\addtotoc{Abstract}  % Add the "Abstract" page entry to the Contents
+\abstract{
+%\addtocontents{toc}{\vspace{1em}}  % Add a gap in the Contents, for aesthetics
+
+The nurse workforce amounts to up to 50\% of the global healthcare workforce yet there is still a shortage. The overburdened nurses are prone to a higher percentage of medical errors hence they actively require assistance with a multitude of tasks that they have to perform. There is a pressing need to automate tasks to assist with the nursing care workflow. The workflow is comprised of multiple tasks and one of them is to monitor patients and log patient activity and vital signs, especially for senior citizens and people who need assistance with their activities of daily living. To address this criticality, we introduce one of its kind a dedicated nurse task automation system that is primarily focused on monitoring and logging patient activity using IoT of IP cameras in a clinical setting. The system predicts the next possible activity as well based on the history of activities logged while allowing the doctor and nurse to remotely monitor and analyze the patient data on a comprehensive dashboard. A boundary-sensitive network works in tandem with the temporal segment network pre-trained on Kinetics-400 to allow real-time activity localization, detection, and recognition. A multivariate transformer's encoder is used to forecast the next activity. We conducted our experiment on the Toyota Smart Home Untrimmed Balanced dataset for forecasting and THUMOS14 and ActivityNet1.3 for activity recognition. We achieved an accuracy of 39.88\% and an MAE of 0.33 for forecasting, AR@1 of 32.93\%, and AR@100 of 75.12\% for activity recognition. This project aims to develop a first-of-its-kind prototype solution for automating a nursing task, acting as a stepping stone to better and more nursing task automation.
+}
+\clearpage  % Abstract ended, start a new page
+
+%% ----------------------------------------------------------------
+\mainmatter	  % Begin normal, numeric (1,2,3...) page numbering
+\pagestyle{fancy}  % Return the page headers back to the "fancy" style
+\onehalfspacing
+% Include the chapters of the thesis, as separate files
+% Just uncomment the lines as you write the chapters
+
+\input{./Chapters/Chapter1} % Introduction 
+
+\input{./Chapters/Chapter2} % Literature Review
+
+\input{./Chapters/Chapter3} % Dataset
+
+\input{./Chapters/Chapter4} % Methodology
+
+\input{./Chapters/Chapter5} % Implementation and Results
+
+\input{./Chapters/Chapter6} % Nursing care Dashboard (Product)
+
+\input{./Chapters/Chapter7} % Conclusion
+
+% \input{./Chapters/Chapter7} % Conclusion
+
+%% ----------------------------------------------------------------
+% Now begin the Appendices, including them as separate files
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+% \appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% \input{./Chapters/AppendixA}	% Appendix Title
+
+%\input{./Chapters/AppendixB} % Appendix Title
+
+%\input{./Chapters/AppendixC} % Appendix Title
+
+\addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
+\backmatter
+
+%% ----------------------------------------------------------------
+\label{References}
+\lhead{\emph{References}}  % Change the left side page header to "References"
+
+% \bibliographystyle{apacite}  % Use "unsrtnat" BibTeX style for formatting the references
+
+% \bibliography{references}  % The references information are stored in the file named "references.bib"
+\printbibliography
+
+\end{document}  % The End
+%% ----------------------------------------------------------------
